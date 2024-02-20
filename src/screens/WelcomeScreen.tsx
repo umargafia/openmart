@@ -39,6 +39,9 @@ const WelcomeScreen: React.FC<{ navigation: navProp }> = ({ navigation }) => {
         style={styles.bottomContainer}
       >
         <Text style={styles.header}>Welcome To Open Mart</Text>
+        <Text style={[styles.header, { fontWeight: '300' }]}>
+          A market for nigerian business
+        </Text>
         <View style={styles.row}>
           <MyButton text="Search Item" onPress={HandleNavigateToSearch} />
           <MyButton text="Search Business" onPress={HandleNavigateToSearch} />
